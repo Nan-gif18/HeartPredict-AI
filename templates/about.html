@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Heart Disease Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .feature-table {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Heart Disease Predictor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="card-title mb-0">About the Heart Disease Prediction Tool</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5>How it Works</h5>
+                        <p>
+                            This application uses machine learning to predict the likelihood of heart disease based on various clinical parameters. 
+                            The model was trained on a dataset of patients with and without heart disease.
+                        </p>
+                        
+                        <h5>Model Information</h5>
+                        <p>
+                            The prediction model uses a Random Forest classifier, which was selected after evaluating multiple 
+                            machine learning algorithms including Decision Trees, Logistic Regression, and K-Nearest Neighbors.
+                            The Random Forest model was chosen due to its superior performance in terms of accuracy, precision, and recall.
+                        </p>
+                        
+                        <h5>Feature Descriptions</h5>
+                        <div class="table-responsive feature-table">
+                            <table class="table table-bordered table-striped">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for feature, description in feature_descriptions.items() %}
+                                    <tr>
+                                        <td>{{ feature }}</td>
+                                        <td>{{ description }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5>Disclaimer</h5>
+                            <div class="alert alert-warning">
+                                <p>
+                                    This tool is for educational and informational purposes only. It should not be used as a substitute for
+                                    professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other
+                                    qualified health provider with any questions you may have regarding a medical condition.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
