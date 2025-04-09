@@ -52,3 +52,19 @@ The dataset used is sourced from Kaggle and contains over 1000 records with feat
 - Scikit-learn
 - Matplotlib / Seaborn (for visualization)
 
+## Project Screenshots
+
+### 1. User Interface
+![User Interface](https://raw.githubusercontent.com/Nan-gif18/HeartPredict-AI/refs/heads/main/project_images/user_interface.png)
+
+### 2. Prediction Result(Positive)
+![Prediction Result(Positive)](https://raw.githubusercontent.com/Nan-gif18/HeartPredict-AI/refs/heads/main/project_images/result_2.png)
+
+### 3. Prediction Result(Negative)
+![Prediction Result(Negative)](https://raw.githubusercontent.com/Nan-gif18/HeartPredict-AI/refs/heads/main/project_images/result_1.png)
+
+### 4. About Page
+![About Page](https://raw.githubusercontent.com/Nan-gif18/HeartPredict-AI/refs/heads/main/project_images/about.png)
+
+### 5. Models Performance Analysis
+![Models Performance Analysis](https://raw.githubusercontent.com/Nan-gif18/HeartPredict-AI/refs/heads/main/project_images/Figure_5.png)
